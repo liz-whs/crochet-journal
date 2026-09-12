@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #faf8f5;
+    color: #2d191d;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    margin-bottom: 50px;
+}
+
+
+.cabecalho h1 {
+    font-size: 58px;
+    margin: 8px 0;
+}
+
+
+.comentario {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #927078;
+}
+
+
+.descricao {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #70575d;
+    margin-top: 10px;
+}
+
+
+/* RESUMO */
+
+.resumo {
+    background-color: #f4ece7;
+    border: 1px solid #e4d8d2;
+    border-radius: 8px;
+
+    padding: 35px;
+    margin-bottom: 55px;
+}
+
+
+.numero-projetos {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+
+    margin: 20px 0;
+}
+
+
+.numero-projetos strong {
+    font-size: 54px;
+}
+
+
+.numero-projetos span {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #735d62;
+}
+
+
+.barra {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e4e2;
+    border-radius: 10px;
+
+    margin: 15px 0;
+}
+
+
+.barra-preenchida {
+    width: 70%;
+    height: 100%;
+    background-color: #e9afc1;
+    border-radius: 10px;
+}
+
+
+.resumo > p:last-child {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #735d62;
+    margin-top: 20px;
+}
+
+
+/* SEÇÃO */
+
+.titulo-secao {
+    margin-bottom: 25px;
+}
+
+
+.titulo-secao h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+}
+
+
+/* GRID */
+
+.grid-pecas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 22px;
+}
+
+
+/* CARD */
+
+.card-peca {
+    border: 1px solid #ded9d5;
+    background-color: white;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.card-peca:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 25px rgba(63, 35, 42, 0.08);
+}
+
+
+.card-imagem {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+
+    background-color: #eee7e3;
+}
+
+
+.card-conteudo {
+    padding: 25px;
+}
+
+
+.tag {
+    display: inline-block;
+
+    font-family: 'IBM Plex Mono', monospace;
+
+    background-color: #edb3c4;
+
+    padding: 4px 8px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+.card-conteudo h3 {
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.card-conteudo p {
+    font-family: 'IBM Plex Mono', monospace;
+
+    font-size: 14px;
+
+    color: #806b70;
+
+    margin-bottom: 20px;
+}
+
+
+.link-tutorial {
+    font-family: 'IBM Plex Mono', monospace;
+
+    font-weight: 500;
+
+    color: #2d191d;
+}
+
+
+/* CARD ADICIONAR */
+
+.card-adicionar {
+    min-height: 330px;
+
+    border: 1px dashed #bcaeb0;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    color: #806b70;
+
+    transition: 0.2s;
+}
+
+
+.card-adicionar:hover {
+    background-color: #f4ece7;
+
+    color: #2d191d;
+}
+
+
+.card-adicionar .mais {
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+
+.card-adicionar h3 {
+    font-family: 'IBM Plex Mono', monospace;
+
+    font-weight: 500;
+}
+
+
+/* TUTORIAL */
+
+.voltar {
+    text-decoration: none;
+
+    color: #725a60;
+
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+.tutorial-cabecalho {
+    margin-top: 40px;
+}
+
+
+.tutorial-cabecalho h1 {
+    font-size: 52px;
+
+    margin: 15px 0;
+}
+
+
+.imagem-principal {
+    width: 100%;
+
+    max-height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin: 35px 0;
+}
+
+
+.informacoes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 15px;
+
+    margin-bottom: 50px;
+}
+
+
+.info {
+    border: 1px solid #ded9d5;
+
+    padding: 18px;
+
+    border-radius: 6px;
+
+    background: white;
+}
+
+
+.info span {
+    font-family: 'IBM Plex Mono', monospace;
+
+    font-size: 12px;
+
+    color: #927078;
+}
+
+
+.info strong {
+    display: block;
+
+    margin-top: 5px;
+}
+
+
+.bloco-tutorial {
+    margin: 45px 0;
+}
+
+
+.bloco-tutorial h2 {
+    margin-bottom: 20px;
+}
+
+
+.lista-materiais {
+    list-style: none;
+}
+
+
+.lista-materiais li {
+    margin-bottom: 12px;
+
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+.lista-materiais li::before {
+    content: "[ ]";
+
+    margin-right: 10px;
+
+    color: #c98398;
+}
+
+
+.passo {
+    border-left: 3px solid #e9afc1;
+
+    padding: 15px 20px;
+
+    margin-bottom: 15px;
+
+    background-color: #fff;
+}
+
+
+.passo strong {
+    font-family: 'IBM Plex Mono', monospace;
+
+    margin-right: 10px;
+}
+
+
+/* FORM */
+
+.formulario {
+    max-width: 750px;
+
+    margin-top: 40px;
+}
+
+
+.campo {
+    margin-bottom: 25px;
+}
+
+
+.campo label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #d8ceca;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.campo textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+
+.botao {
+    background-color: #2d191d;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 5px;
+
+    font-family: 'IBM Plex Mono', monospace;
+
+    cursor: pointer;
+}
+
+
+.botao:hover {
+    background-color: #533139;
+}
+
+
+/* FOTOS EXTRAS */
+
+.galeria {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 15px;
+}
+
+
+.galeria img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+
+@media (max-width: 600px) {
+
+    .cabecalho h1 {
+        font-size: 40px;
+    }
+
+    .tutorial-cabecalho h1 {
+        font-size: 38px;
+    }
+
+}

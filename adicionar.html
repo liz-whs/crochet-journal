@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Adicionar peça</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<main class="container">
+
+
+    <a
+        href="index.html"
+        class="voltar"
+    >
+        ← voltar para minhas peças
+    </a>
+
+
+    <header class="tutorial-cabecalho">
+
+        <p class="comentario">
+            // novo projeto
+        </p>
+
+        <h1>
+            Adicione sua peça
+        </h1>
+
+        <p class="descricao">
+            Crie seu próprio tutorial de crochê.
+        </p>
+
+    </header>
+
+
+    <form
+        class="formulario"
+        id="formPeca"
+    >
+
+
+        <div class="campo">
+
+            <label for="nome">
+                nome da peça
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                required
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="categoria">
+                categoria
+            </label>
+
+            <input
+                type="text"
+                id="categoria"
+                placeholder="ex: bolsa"
+                required
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="nivel">
+                nível
+            </label>
+
+            <select
+                id="nivel"
+                required
+            >
+
+                <option value="Fácil">
+                    Fácil
+                </option>
+
+                <option value="Intermediário">
+                    Intermediário
+                </option>
+
+                <option value="Difícil">
+                    Difícil
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="agulha">
+                tamanho da agulha
+            </label>
+
+            <input
+                type="text"
+                id="agulha"
+                placeholder="ex: 4 mm"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="fio">
+                tipo de fio
+            </label>
+
+            <input
+                type="text"
+                id="fio"
+                placeholder="ex: algodão"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="imagem">
+                imagem principal
+            </label>
+
+            <input
+                type="url"
+                id="imagem"
+                placeholder="cole a URL de uma imagem"
+                required
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="materiais">
+                materiais
+            </label>
+
+            <textarea
+                id="materiais"
+                placeholder="Digite um material por linha"
+                required
+            ></textarea>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="tutorial">
+                passo a passo
+            </label>
+
+            <textarea
+                id="tutorial"
+                placeholder="Digite um passo por linha"
+                required
+            ></textarea>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="fotos">
+                fotos adicionais
+            </label>
+
+            <textarea
+                id="fotos"
+                placeholder="Cole uma URL de imagem por linha"
+            ></textarea>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="botao"
+        >
+            salvar peça →
+        </button>
+
+
+    </form>
+
+
+</main>
+
+
+<script src="js/adicionar.js"></script>
+
+
+</body>
+
+</html>
